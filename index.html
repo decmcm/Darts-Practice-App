@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darts 501 Practice</title>
 
-    <!-- PWA: Link to the Manifest file -->
-    <link rel="manifest" href="manifest.json">
+    <!-- PWA: Link to the Manifest file (FIX: Absolute Path) -->
+    <link rel="manifest" href="/Darts-Practice-App/manifest.json">
     <!-- PWA: Theme color for browser UI (and iOS status bar) -->
     <meta name="theme-color" content="#1f2937">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -1106,10 +1106,10 @@
             // Start the app
             game.init();
 
-            // --- PWA: Register Service Worker ---
+            // --- PWA: Register Service Worker (FIX: Absolute Path & Scope) ---
             if ('serviceWorker' in navigator) {
                 window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('sw.js')
+                    navigator.serviceWorker.register('/Darts-Practice-App/sw.js', { scope: '/Darts-Practice-App/' })
                         .then(registration => {
                             console.log('ServiceWorker registration successful with scope: ', registration.scope);
                         })
