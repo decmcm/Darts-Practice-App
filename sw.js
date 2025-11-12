@@ -1,10 +1,10 @@
 // This name is for the "cache" - the folder where files are stored on your phone
 const CACHE_NAME = 'darts-app-v1';
 
-// This is the list of files to save
+// This is the list of files to save (FIX: Absolute Paths)
 const ASSETS_TO_CACHE = [
-  'darts_practice_app.html',
-  'manifest.json',
+  '/Darts-Practice-App/index.html',
+  '/Darts-Practice-App/manifest.json',
   'https://cdn.tailwindcss.com',
   'https://cdn.jsdelivr.net/npm/chart.js',
   'https://placehold.co/192x192/facc15/111827?text=🎯',
