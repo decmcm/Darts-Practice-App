@@ -1,7 +1,7 @@
 {
   "name": "Darts 501 Practice",
   "short_name": "Darts 501",
-  "start_url": "darts_practice_app.html",
+  "start_url": "/Darts-Practice-App/index.html",
   "display": "standalone",
   "background_color": "#111827",
   "theme_color": "#1f2937",
